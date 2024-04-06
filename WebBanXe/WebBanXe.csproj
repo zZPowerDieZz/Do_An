@@ -1,0 +1,277 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F73D7F06-BA25-4136-8D80-A4E6B920CFAC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebBanXe</RootNamespace>
+    <AssemblyName>WebBanXe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44394</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\ajax-loader.gif" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\vendor.css" />
+    <Content Include="Dem.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="icomoon\fonts\icomoon.svg" />
+    <Content Include="icomoon\icomoon.css" />
+    <Content Include="icomoon\Read Me.txt" />
+    <Content Include="images\app-store.jpg" />
+    <Content Include="images\chocolat\close.png" />
+    <Content Include="images\chocolat\fullscreen-black.png" />
+    <Content Include="images\chocolat\fullscreen.png" />
+    <Content Include="images\chocolat\left.png" />
+    <Content Include="images\chocolat\loader.gif" />
+    <Content Include="images\chocolat\right.png" />
+    <Content Include="images\client-image1.png" />
+    <Content Include="images\client-image2.png" />
+    <Content Include="images\client-image3.png" />
+    <Content Include="images\client-image4.png" />
+    <Content Include="images\client-image5.png" />
+    <Content Include="images\curly-divider.svg" />
+    <Content Include="images\default.png" />
+    <Content Include="images\device.png" />
+    <Content Include="images\google-play.jpg" />
+    <Content Include="images\item.png" />
+    <Content Include="images\item1.png" />
+    <Content Include="images\item3.png" />
+    <Content Include="images\item4.png" />
+    <Content Include="images\item5.png" />
+    <Content Include="images\leaf.png" />
+    <Content Include="images\main-banner1.jpg" />
+    <Content Include="images\main-banner2.jpg" />
+    <Content Include="images\main-logo.png" />
+    <Content Include="images\ns-arrow-right.svg" />
+    <Content Include="images\pattern1.png" />
+    <Content Include="images\pattern2.png" />
+    <Content Include="images\post-img1.jpg" />
+    <Content Include="images\post-img2.jpg" />
+    <Content Include="images\post-img3.jpg" />
+    <Content Include="images\product-item1.jpg" />
+    <Content Include="images\product-item2.jpg" />
+    <Content Include="images\product-item3.jpg" />
+    <Content Include="images\product-item4.jpg" />
+    <Content Include="images\product-item5.jpg" />
+    <Content Include="images\product-item6.jpg" />
+    <Content Include="images\product-item7.jpg" />
+    <Content Include="images\product-item8.jpg" />
+    <Content Include="images\single-image.jpg" />
+    <Content Include="images\tab-item1.jpg" />
+    <Content Include="images\tab-item2.jpg" />
+    <Content Include="images\tab-item3.jpg" />
+    <Content Include="images\tab-item4.jpg" />
+    <Content Include="images\tab-item5.jpg" />
+    <Content Include="images\tab-item6.jpg" />
+    <Content Include="images\tab-item7.jpg" />
+    <Content Include="images\tab-item8.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\slideNav.js" />
+    <Content Include="js\slideNav.min.js" />
+    <Content Include="Logo\AstonMartin.jpg" />
+    <Content Include="Logo\Bentley.jpg.jpg" />
+    <Content Include="Logo\BMW.jpg.jpg" />
+    <Content Include="Logo\Ferrari.jpg" />
+    <Content Include="Logo\Ford.jpg.jpg" />
+    <Content Include="Logo\Honda.jpg.jpg" />
+    <Content Include="Logo\Lamborghini.jpg.jpg" />
+    <Content Include="Logo\Maserati.jpg.jpg" />
+    <Content Include="Logo\Mercedes.jpg.jpg" />
+    <Content Include="Logo\Porsche.jpg.jpg" />
+    <Content Include="readme.txt" />
+    <Content Include="style.css" />
+    <Content Include="TatCaXe.aspx" />
+    <Content Include="TrangChu.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="XeTheoHang.aspx" />
+    <Content Include="xe\aston-martin-db11-v8-coupe.jpg" />
+    <Content Include="xe\aston-martin-dbs-superleggera-volante.jpg" />
+    <Content Include="xe\aston-martin-dbx.jpg" />
+    <Content Include="xe\aston-martin-vantage.jpg" />
+    <Content Include="xe\Bentley-continental-gt.jpg" />
+    <Content Include="xe\bentley-mulliner-bacalar.jpg" />
+    <Content Include="xe\bentley-mulsanne.jpg" />
+    <Content Include="xe\BMW-330i.jpg" />
+    <Content Include="xe\BMW-i7.jpg" />
+    <Content Include="xe\BMW-i8.jpg" />
+    <Content Include="xe\BMW-X3-sDrive20i-M-Sport.jpg" />
+    <Content Include="xe\BMW-XM.jpg" />
+    <Content Include="xe\ferrari-812-gts.jpg" />
+    <Content Include="xe\ferrari-f8-tributo.jpg" />
+    <Content Include="xe\Ferrari-Purosangue.jpg" />
+    <Content Include="xe\ford-explorer.jpg" />
+    <Content Include="xe\ford-territory.jpg" />
+    <Content Include="xe\ford-transit.jpg" />
+    <Content Include="xe\honda-brio.jpg" />
+    <Content Include="xe\honda-civic.jpg" />
+    <Content Include="xe\honda-crv.jpg" />
+    <Content Include="xe\Lamborghini-Aventador-LP-700-4.jpg" />
+    <Content Include="xe\Lamborghini-Aventador-SVJ.jpg" />
+    <Content Include="xe\lamborghini-huracan-lp580-2.jpg" />
+    <Content Include="xe\lamborghini-huracan-sto.jpg" />
+    <Content Include="xe\Lamborghini-Urus-Performante.jpg" />
+    <Content Include="xe\Maserati-Ghibli-Hybrid.jpg" />
+    <Content Include="xe\Maserati-Grecale.jpg" />
+    <Content Include="xe\maserati-mc20.jpg" />
+    <Content Include="xe\mercedes-amg-a35-4matic.jpg" />
+    <Content Include="xe\mercedes-amg-g63.jpg" />
+    <Content Include="xe\Mercedes-Benz-EQB.jpg" />
+    <Content Include="xe\Porsche 911Targa4S.jpg" />
+    <Content Include="xe\porsche-718-boxster.jpg" />
+    <Content Include="xe\porsche-taycan.jpg" />
+    <Content Include="xe\PorschePanameraTurboS.jpg" />
+    <Content Include="xe\porsche_macan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TatCaXe.aspx.cs">
+      <DependentUpon>TatCaXe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TatCaXe.aspx.designer.cs">
+      <DependentUpon>TatCaXe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XeTheoHang.aspx.cs">
+      <DependentUpon>XeTheoHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XeTheoHang.aspx.designer.cs">
+      <DependentUpon>XeTheoHang.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icomoon\fonts\icomoon.eot" />
+    <Content Include="icomoon\fonts\icomoon.ttf" />
+    <Content Include="icomoon\fonts\icomoon.woff" />
+    <Content Include="icomoon\selection.json" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58007</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44394/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

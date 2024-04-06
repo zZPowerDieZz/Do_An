@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBanXe", "WebBanXe\WebBanXe.csproj", "{F73D7F06-BA25-4136-8D80-A4E6B920CFAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F73D7F06-BA25-4136-8D80-A4E6B920CFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73D7F06-BA25-4136-8D80-A4E6B920CFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73D7F06-BA25-4136-8D80-A4E6B920CFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73D7F06-BA25-4136-8D80-A4E6B920CFAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89B4FEC1-D269-4BEA-AF7E-EE3E3F1294F2}
+	EndGlobalSection
+EndGlobal
