@@ -67,10 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChiTiet.aspx" />
     <Content Include="css\ajax-loader.gif" />
     <Content Include="css\normalize.css" />
     <Content Include="css\vendor.css" />
+    <Content Include="Database\QLBanHang.sql" />
     <Content Include="Dem.txt" />
+    <Content Include="GioHang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="icomoon\fonts\icomoon.svg" />
     <Content Include="icomoon\icomoon.css" />
@@ -131,15 +134,15 @@
     <Content Include="js\slideNav.js" />
     <Content Include="js\slideNav.min.js" />
     <Content Include="Logo\AstonMartin.jpg" />
-    <Content Include="Logo\Bentley.jpg.jpg" />
-    <Content Include="Logo\BMW.jpg.jpg" />
+    <Content Include="Logo\Bentley.jpg" />
+    <Content Include="Logo\BMW.jpg" />
     <Content Include="Logo\Ferrari.jpg" />
-    <Content Include="Logo\Ford.jpg.jpg" />
-    <Content Include="Logo\Honda.jpg.jpg" />
-    <Content Include="Logo\Lamborghini.jpg.jpg" />
-    <Content Include="Logo\Maserati.jpg.jpg" />
-    <Content Include="Logo\Mercedes.jpg.jpg" />
-    <Content Include="Logo\Porsche.jpg.jpg" />
+    <Content Include="Logo\Ford.jpg" />
+    <Content Include="Logo\Honda.jpg" />
+    <Content Include="Logo\Lamborghini.jpg" />
+    <Content Include="Logo\Maserati.jpg" />
+    <Content Include="Logo\Mercedes.jpg" />
+    <Content Include="Logo\Porsche.jpg" />
     <Content Include="readme.txt" />
     <Content Include="style.css" />
     <Content Include="TatCaXe.aspx" />
@@ -157,14 +160,14 @@
     <Content Include="xe\BMW-i7.jpg" />
     <Content Include="xe\BMW-i8.jpg" />
     <Content Include="xe\BMW-X3-sDrive20i-M-Sport.jpg" />
-    <Content Include="xe\BMW-XM.jpg" />
+    <Content Include="xe\BWM-XM.jpg" />
     <Content Include="xe\ferrari-812-gts.jpg" />
     <Content Include="xe\ferrari-f8-tributo.jpg" />
     <Content Include="xe\Ferrari-Purosangue.jpg" />
     <Content Include="xe\ford-explorer.jpg" />
     <Content Include="xe\ford-territory.jpg" />
     <Content Include="xe\ford-transit.jpg" />
-    <Content Include="xe\honda-brio.jpg" />
+    <Content Include="xe\honda-brio-rs.jpg" />
     <Content Include="xe\honda-civic.jpg" />
     <Content Include="xe\honda-crv.jpg" />
     <Content Include="xe\Lamborghini-Aventador-LP-700-4.jpg" />
@@ -185,9 +188,25 @@
     <Content Include="xe\porsche_macan.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTiet.aspx.cs">
+      <DependentUpon>ChiTiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTiet.aspx.designer.cs">
+      <DependentUpon>ChiTiet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -234,7 +253,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

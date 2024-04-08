@@ -45,7 +45,7 @@
 						<div class="right-element">
 							<a href="#" class="user-account for-buy"><i
 									class="icon icon-user"></i><span>Account</span></a>
-							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+							<a href="GioHang.aspx" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
 									$)</span></a>
 
 							<div class="action-menu">
@@ -84,9 +84,9 @@
 						<nav id="navbar">
 							<div class="main-menu stellarnav">
 								<ul class="menu-list">
-									<li class="menu-item active"><a href="TrangChu.aspx">Home</a></li>
+									<li class="menu-item active"><a href="TrangChu.aspx">Trang chủ</a></li>
 									<li class="menu-item has-sub">
-										<a href="XeTheoHang.aspx" class="nav-link">Pages</a>
+										<a href="XeTheoHang.aspx" class="nav-link">Các hãng xe</a>
 										<ul>
 											<asp:Repeater ID="rptChuDe" runat="server" DataSourceID="dsChuDe">
 												<ItemTemplate>
@@ -122,7 +122,7 @@
         </div>
     </form>
 		<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 		crossorigin="anonymous"></script>
 	<script src="js/plugins.js"></script>

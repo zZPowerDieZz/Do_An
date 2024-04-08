@@ -16,14 +16,14 @@
 								<ItemTemplate>
 									<div class="col-md-3">
 										<div class="product-item">
-											<figure class="product-style">
-												<img src='xe/<%# Eval("AnhXe")%>' alt="xe" class="product-item" style="width:300px;height:200px">
-												<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-													Cart</button>
+											<figure class="product-style text-center">
+											<a href="ChiTiet.aspx?maxe=<%# Eval("MaXe") %>"><img src='xe/<%# Eval("AnhXe")%>' alt="xe" class="product-item" style="width:300px;height:200px"></a>
+												<asp:Button ID="btnAddToCard" runat="server" Text="Add To Card" CommandArgument='<%# Eval("MaXe") %>' class="btn btn-success"
+													OnClick="btnAddToCart_Click"  />
 											</figure>
 											<figcaption>
 												<h2><%# Eval("TenXe") %></h2>
-												<div class="item-price"><%# Eval("DonGia","{0:#,##0Đ}") %></div>
+												<div class="item-price"><%# Eval("DonGia","{0:#,##0$}") %></div>
 											</figcaption>
 										</div>
 									</div>
