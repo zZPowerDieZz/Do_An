@@ -70,11 +70,11 @@
 
 		<header id="header">
 			<div class="container-fluid">
-				<div class="row">
+				<div class="row text-center">
 
 					<div class="col-md-2">
-						<div class="main-logo">
-							<a href="TrangChu.aspx"><img src="images/main-logo.png" alt="logo"></a>
+						<div class="main-logo" style="height:100px">
+							<a href="TrangChu.aspx"><img src="Logo/logo_doan.png" alt="logo"></a>
 						</div>
 
 					</div>
@@ -83,7 +83,7 @@
 
 						<nav id="navbar">
 							<div class="main-menu stellarnav">
-								<ul class="menu-list">
+								<ul class="menu-list mt-4">
 									<li class="menu-item active"><a href="TrangChu.aspx">Trang chủ</a></li>
 									<li class="menu-item has-sub">
 										<a href="XeTheoHang.aspx" class="nav-link">Các hãng xe</a>

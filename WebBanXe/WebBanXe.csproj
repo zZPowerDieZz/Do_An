@@ -79,6 +79,7 @@
     <Content Include="icomoon\icomoon.css" />
     <Content Include="icomoon\Read Me.txt" />
     <Content Include="images\app-store.jpg" />
+    <Content Include="images\background.png" />
     <Content Include="images\chocolat\close.png" />
     <Content Include="images\chocolat\fullscreen-black.png" />
     <Content Include="images\chocolat\fullscreen.png" />
@@ -140,6 +141,7 @@
     <Content Include="Logo\Ford.jpg" />
     <Content Include="Logo\Honda.jpg" />
     <Content Include="Logo\Lamborghini.jpg" />
+    <Content Include="Logo\logo_doan.png" />
     <Content Include="Logo\Maserati.jpg" />
     <Content Include="Logo\Mercedes.jpg" />
     <Content Include="Logo\Porsche.jpg" />
