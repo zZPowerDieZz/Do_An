@@ -24,7 +24,8 @@
                  <ItemTemplate>
                      <asp:LinkButton ID="btUpdate" runat="server" CommandName="Update" CssClass="btn btn-secondary">
                           <i class="bi bi-pencil-square"></i>Update</asp:LinkButton>
-                      <asp:LinkButton ID="btDelete" runat="server" CommandName="Delete"  CssClass="btn btn-danger">
+                      <asp:LinkButton ID="btDelete" runat="server" CommandName="Delete"  CssClass="btn btn-danger"
+                          OnClientClick="return confirm('Bạn có muốn xoá sản phẩm này ra khỏi giỏ hàng của mình không?')">
                          <i class="bi bi-trash"></i>Delete</asp:LinkButton>
                  </ItemTemplate> 
             </asp:TemplateField>

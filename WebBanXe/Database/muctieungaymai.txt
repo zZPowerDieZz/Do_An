@@ -2,4 +2,4 @@ mục tiêu đồ án
 1. thêm thông số kĩ thuật của xe vào bản chitiet.aspx
 2. làm thêm nút ở bản chitiet.aspx
 3.làm đăng nhập, đăng ký
-4. xác nhận có muốn xoá sản phẩm khỏi giohang.aspx
+4. xác nhận có muốn xoá sản phẩm khỏi giohang.aspx x

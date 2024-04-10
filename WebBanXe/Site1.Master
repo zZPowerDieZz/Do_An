@@ -19,7 +19,6 @@
     <form id="form1" runat="server">
         <div>
             <div id="header-wrap">
-
 		<div class="top-content">
 			<div class="container-fluid">
 				<div class="row">
@@ -43,23 +42,88 @@
 					</div>
 					<div class="col-md-6">
 						<div class="right-element">
-							<a href="#" class="user-account for-buy"><i
-									class="icon icon-user"></i><span>Account</span></a>
-							<a href="GioHang.aspx" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
-									$)</span></a>
+							<div class="d-flex mt-5 mt-lg-0 ps-xl-5 align-items-center justify-content-end ">
+                                <a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="icon icon-user"></i>Account </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="tabs-listing">
+                                                <nav>
+                                                    <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab" role="tablist">
+                                                        <button class="btn btn-outline-primary text-uppercase me-3 active" id="nav-sign-in-tab" data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab" aria-controls="nav-sign-in" aria-selected="true">Log
+                                                            In</button>
+                                                        <button class="btn btn-outline-primary text-uppercase" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false" tabindex="-1">Sign
+                                                            Up</button>
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel" aria-labelledby="nav-sign-in-tab">
+															<asp:ValidationSummary ID="vsLoi" runat="server" ForeColor="#ff0000"/>
+                                                            <div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																<asp:Label AssociatedControlID="txtTenDN" runat="server" Text="Tên đăng nhập"></asp:Label>
+																<asp:TextBox ID="txtTenDN" CssClass="form-controls" runat="server" Width="100%"></asp:TextBox>
+                                                            </div>
+                                                            <div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																<asp:Label AssociatedControlID="txtMK" runat="server" Text="Mật khẩu"></asp:Label>
+																<asp:TextBox ID="txtMK" CssClass="form-controls" runat="server" TextMode="Password" Width="100%"></asp:TextBox>
+                                                            </div>
+                                                            <div class="d-grid my-3">
+                                                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
+                                                                    In</button>
+                                                            </div>
+														
+                                                    </div>
+                                                    <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                                                            <div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																<asp:Label AssociatedControlID="txtHoTenKH" runat="server" Text="Họ tên khách hàng"></asp:Label>
+																<asp:TextBox ID="txtHoTenKH" CssClass="form-controls" runat="server" Width="100%"></asp:TextBox>
+                                                            </div>
+                                                            <div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																<asp:Label AssociatedControlID="txtDiaChi" runat="server" Text="Địa chỉ"></asp:Label>
+																<asp:TextBox ID="txtDiaChi" CssClass="form-controls" runat="server" Width="100%"></asp:TextBox>
+                                                            </div>
+															<div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																	<asp:Label AssociatedControlID="txtSDT" runat="server" Text="Số điện thoại"></asp:Label>
+																	<asp:TextBox ID="txtSDT" CssClass="form-controls" runat="server" Width="100%"></asp:TextBox>
+																</div>
+															<div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																	<asp:Label AssociatedControlID="txtNgaySinh" runat="server" Text="Ngày sinh"></asp:Label>
+																	<asp:TextBox ID="txtNgaySinh" TextMode="Date" CssClass="form-controls" runat="server" Width="100%"></asp:TextBox>
+																</div>
+															<div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																	<asp:Label AssociatedControlID="txtEmail" runat="server" Text="Email"></asp:Label>
+																	<asp:TextBox ID="txtEmail" TextMode="Email" CssClass="form-controls" runat="server" Width="100%"></asp:TextBox>
+                                                            </div>
+															<div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																	<asp:Label AssociatedControlID="txtTenDNNew" runat="server" Text="Tên đăng nhập"></asp:Label>
+																	<asp:TextBox ID="txtTenDNNew" CssClass="form-controls" runat="server" Width="100%"></asp:TextBox>
+                                                            </div>
+															<div class="form-gruop col-lg-12 my-4 fw-bold text-black">
+																<asp:Label AssociatedControlID="txtMK" runat="server" Text="Mật khẩu"></asp:Label>
+																<asp:TextBox ID="txtMKNew" CssClass="form-controls" runat="server" TextMode="Password" Width="100%"></asp:TextBox>
+                                                            </div>
+                                                            <div class="d-grid my-3">
+                                                                <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
+                                                                    Up</button>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <a href="GioHang.aspx" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0$)</span></a>
+                    </div>
+							
 
-							<div class="action-menu">
-
-								<div class="search-bar">
-									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
-										<i class="icon icon-search"></i>
-									</a>
-									<form role="search" method="get" class="search-box">
-										<input class="search-field text search-input" placeholder="Search"
-											type="search">
-									</form>
-								</div>
-							</div>
+							
 
 						</div><!--top-right-->
 					</div>
