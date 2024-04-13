@@ -148,6 +148,7 @@
     <Content Include="readme.txt" />
     <Content Include="style.css" />
     <Content Include="TatCaXe.aspx" />
+    <Content Include="ThemXe.aspx" />
     <Content Include="TrangChu.aspx" />
     <Content Include="Web.config" />
     <Content Include="XeTheoHang.aspx" />
@@ -223,6 +224,13 @@
     </Compile>
     <Compile Include="TatCaXe.aspx.designer.cs">
       <DependentUpon>TatCaXe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemXe.aspx.cs">
+      <DependentUpon>ThemXe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemXe.aspx.designer.cs">
+      <DependentUpon>ThemXe.aspx</DependentUpon>
     </Compile>
     <Compile Include="TrangChu.aspx.cs">
       <DependentUpon>TrangChu.aspx</DependentUpon>

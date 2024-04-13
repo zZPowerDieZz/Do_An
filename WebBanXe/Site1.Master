@@ -159,7 +159,7 @@
 											</asp:Repeater>
 										</ul>
 									</li>
-									<li class="menu-item active"><a href="index.aspx"></a></li>
+									<li class="menu-item active"><a href="ThemXe.aspx">Thêm xe mới</a></li>
 								</ul>
 
 								<div class="hamburger">

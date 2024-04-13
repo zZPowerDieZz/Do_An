@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="noiDung" runat="server">
     <asp:Repeater ID="rptXe" runat="server" DataSourceID="dsXe">
         <ItemTemplate>
+           <h1 class="text-center fw-bold"><%# Eval("TenXe") %></h1>
             <div class="row">
                 <div class="col-md-5">
                     <img src="xe/<%# Eval("AnhXe") %>" alt="xe" class="product-item" style="width:100%;height:100%">

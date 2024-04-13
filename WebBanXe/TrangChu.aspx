@@ -17,7 +17,7 @@
 	</section>
 
 
-	<section id="featured-books" class="py-5 my-5">
+	<section id="sieuxe" class="py-5 my-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
